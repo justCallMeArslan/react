@@ -14,5 +14,5 @@ Difference between library and framework:
 Important note: the degree of freedom a library or framework gives depends of how
 "opinionated" it is.
 
-
-
+React dominates front end framework market for last 5 years. Next.js and svelte and next 
+competitors.
