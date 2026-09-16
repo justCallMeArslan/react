@@ -60,6 +60,9 @@ element 2
 </>
 );
 
+
+<></>. - called a Fragment
+
 _incorrect_ (multiple elements getting returned without wrapper):
 
 return (
@@ -86,3 +89,4 @@ stroke-width -> strokeWidth
 
 
 Converting HTML to JSX
+
