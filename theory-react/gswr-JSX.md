@@ -60,7 +60,6 @@ element 2
 </>
 );
 
-
 <></>. - called a Fragment
 
 _incorrect_ (multiple elements getting returned without wrapper):
@@ -78,15 +77,18 @@ closed:
 HTML - <input>, <link> , <img>
 JSX - <input />, <link />, <img />
 
-
 3. camelCase most things
 
-JSX turns into JS and attributes of elements becomes keys of JS objects, so we 
+JSX turns into JS and attributes of elements becomes keys of JS objects, so we
 cant use dashes(kebab case) or reserved words such as class:
 
 class -> className,
 stroke-width -> strokeWidth
 
 
+
 Converting HTML to JSX
 
+Basically done following rules above and rules for curly bracers.
+
+{const} or {objectName.key}, if CSS used it will be presented as double curly bracers.
