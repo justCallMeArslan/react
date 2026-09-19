@@ -85,10 +85,9 @@ cant use dashes(kebab case) or reserved words such as class:
 class -> className,
 stroke-width -> strokeWidth
 
-
-
 Converting HTML to JSX
 
 Basically done following rules above and rules for curly bracers.
 
-{const} or {objectName.key}, if CSS used it will be presented as double curly bracers.
+{const} or {objectName.key}, if CSS used in JSX it will be presented in double
+curly bracers.
