@@ -4,6 +4,8 @@ Data is transferred from parent components to child components via props. This d
 transfer is undirectional, meaning it flows in only one direction (any changes
 will only affect child components (not parent or siblings)).
 
+Props are the information that we pass to a JSX tag ( e.g <img className, src, alt />).
+
 There are multiple ways how we can use props:
 
 1. add them to parameter of function :
