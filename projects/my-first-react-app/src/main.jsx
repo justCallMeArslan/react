@@ -6,7 +6,8 @@ import Greetings from './Greetings'
 import AskAge, { cube, foo, graph } from './Graph.jsx';
 import HtmlToJSX from './htmlToJSX.jsx'
 import TodoList from './reactDevExercise2.jsx'
-import Gallery from './reactDevExerciseProps.jsx'
+import { Gallery, Profile1, Profile2 } from './reactDevExerciseProps.jsx'
+
 
 
 // naemd functions cant be used as JSX part, its basic JS and should be used separately
@@ -31,5 +32,7 @@ createRoot(document.getElementById('root')).render(
     <HtmlToJSX />
     <TodoList />
     <Gallery />
+    <Profile1 />
+    <Profile2 />
   </StrictMode>,
 )
