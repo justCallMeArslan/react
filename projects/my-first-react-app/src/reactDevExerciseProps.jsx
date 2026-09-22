@@ -129,13 +129,13 @@ export function Profile1() {
 
 //exercise 3, using children variant of props
 
-function Card({ children }) {
+function Card({ internal }) {
 
     return (
         <div>
             <div className="card">
                 <div className="card-content">
-                    {children}
+                    {internal}
                 </div>
             </div>
         </div>
