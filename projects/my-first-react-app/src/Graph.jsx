@@ -20,8 +20,9 @@ function AskAge() {
     return <h1> How old are you, habibi?</h1>
 }
 
-export { cube, foo, graph }
 export default AskAge
+// eslint-disable-next-line react-refresh/only-export-components
+export { cube, foo, graph }
 
 // export used in this example is valid, but violates React Fast refresh conventional
 // use, thats why we have notification in log. To fix that JSX part and JS part 

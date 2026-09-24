@@ -3,16 +3,16 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 import Greetings from './Greetings'
-import AskAge, { cube, foo, graph } from './Graph.jsx';
-import HtmlToJSX from './htmlToJSX.jsx'
-import TodoList from './reactDevExercise2.jsx'
-import { Gallery, Profile1, Profile2 } from './reactDevExerciseProps.jsx'
-import { PackingList1, DrinkList } from './reactDevExerciseConditional.jsx'
+import AskAge, { cube, foo, graph } from './Graph.jsx'
+import HtmlToJSX from './htmlToJSX.jsx';
+import TodoList from './reactDevExercise2.jsx';
+import { Gallery, Profile1, Profile2 } from './reactDevExerciseProps.jsx';
+import { PackingList1, DrinkList } from './reactDevExerciseConditional.jsx';
 
 
 
 
-// naemd functions cant be used as JSX part, its basic JS and should be used separately
+// named functions cant be used as JSX part, its basic JS and should be used separately
 
 graph.options = {
   color: "red",
@@ -38,5 +38,5 @@ createRoot(document.getElementById('root')).render(
     <Profile2 />
     <PackingList1 />
     <DrinkList />
-  </StrictMode>,
+  </StrictMode>
 )
