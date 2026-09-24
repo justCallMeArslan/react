@@ -7,7 +7,8 @@ import AskAge, { cube, foo, graph } from './Graph.jsx';
 import HtmlToJSX from './htmlToJSX.jsx'
 import TodoList from './reactDevExercise2.jsx'
 import { Gallery, Profile1, Profile2 } from './reactDevExerciseProps.jsx'
-import PackingList1 from './reactDevExerciseConditional.jsx'
+import { PackingList1, DrinkList } from './reactDevExerciseConditional.jsx'
+
 
 
 
@@ -36,5 +37,6 @@ createRoot(document.getElementById('root')).render(
     <Profile1 />
     <Profile2 />
     <PackingList1 />
+    <DrinkList />
   </StrictMode>,
 )
