@@ -8,6 +8,7 @@ import HtmlToJSX from './htmlToJSX.jsx';
 import TodoList from './reactDevExercise2.jsx';
 import { Gallery, Profile1, Profile2 } from './reactDevExerciseProps.jsx';
 import { PackingList1, DrinkList } from './reactDevExerciseConditional.jsx';
+import { List, Poem, PoemViaLoop, RecipeList } from './reactDevExerciseRendering.jsx'
 
 
 
@@ -38,5 +39,9 @@ createRoot(document.getElementById('root')).render(
     <Profile2 />
     <PackingList1 />
     <DrinkList />
+    <List />
+    <RecipeList />
+    <Poem />
+    <PoemViaLoop />
   </StrictMode>
 )
