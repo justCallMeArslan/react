@@ -24,4 +24,4 @@ by the use prefix. For example, useState is a hook.
 Hooks have rules that we need to abide by:
 
 - Hooks can only be called from the top level of a functional component.
-- Hooks can’t be called from inside loops or conditions.
+- Hooks can’t be called from inside loops or conditions, or other nested functions.
