@@ -4,9 +4,31 @@ import { sculptureList } from './data1.jsx';
 export default function Gallery() {
     const [index, setIndex] = useState(0);
     const [showMore, setShowMore] = useState(false);
+    const [disabledNext, setDisabledNext] = useState(false);
+    const [disabledPrev, setDisabledPrev] = useState(false);
 
     function handleNextClick() {
-        setIndex(index + 1);
+
+        if (index < sculptureList.length - 1) {
+            const nextIndex = index + 1;
+            setIndex(nextIndex)
+            setDisabledPrev(false)
+            if (nextIndex === sculptureList.length - 1) {
+                setDisabledNext(true);
+            }
+        }
+    }
+
+    function handlePrevClick() {
+
+        if (index > 0) {
+            const prevIndex = index - 1;
+            setIndex(prevIndex);
+            setDisabledNext(false);
+            if (prevIndex === 0) {
+                setDisabledPrev(true);
+            }
+        }
     }
 
     function handleMoreClick() {
@@ -14,9 +36,14 @@ export default function Gallery() {
     }
 
     let sculpture = sculptureList[index];
+
+
     return (
         <>
-            <button onClick={handleNextClick}>
+            <button onClick={handlePrevClick} disabled={disabledPrev}>
+                Prev
+            </button>
+            <button onClick={handleNextClick} disabled={disabledNext}>
                 Next
             </button>
             <h2>
