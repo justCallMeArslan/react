@@ -28,3 +28,9 @@ function Person() {
   );
 }
 ```
+
+When React re-renders a component:
+
+React calls your function again.
+Your function returns a new JSX snapshot.
+React then updates the screen to match the snapshot your function returned.
