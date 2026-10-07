@@ -31,6 +31,23 @@ function Person() {
 
 When React re-renders a component:
 
-React calls your function again.
-Your function returns a new JSX snapshot.
-React then updates the screen to match the snapshot your function returned.
+1. React calls your function again.
+2. Your function returns a new JSX snapshot.
+3. React then updates the screen to match the snapshot your function returned.
+
+- The state stored in React may have changed by the time the alert runs, but it was
+  scheduled using a snapshot of the state at the time the user interacted with it!
+  So we need to keep in mind that snapshot getting rendered on next re-rerender, even
+  if it set by asynchronous setInterval or similar.
+
+- Setting state requests a new render.
+- React stores state outside of your component, as if on a shelf.
+- When you call useState, React gives you a snapshot of the state for that render.
+- Variables and event handlers don’t “survive” re-renders. Every render has its
+  own event handlers.
+- Every render (and functions inside it) will always “see” the snapshot of the
+  state that React gave to that render.
+- You can mentally substitute state in event handlers, similarly to how you
+  think about the rendered JSX.
+- Event handlers created in the past have the state values from the render in
+  which they were created.
