@@ -4,6 +4,7 @@ import Gallery from './completeGallery'
 import Form from './fixStuck'
 import FeedbackForm from './fixCrash'
 import FeedbackForm1 from './removeUnnesState'
+import TrafficLight from './trafficLight'
 
 
 createRoot(document.getElementById('root')).render(
@@ -12,5 +13,6 @@ createRoot(document.getElementById('root')).render(
     <Form />
     <FeedbackForm />
     <FeedbackForm1 />
+    <TrafficLight />
   </StrictMode>,
 )
