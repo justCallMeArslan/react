@@ -28,7 +28,6 @@ function Person() {
   );
 }
 
-
 // exercise on that part is completed in React dev exercises.
 ```
 
@@ -54,3 +53,33 @@ When React re-renders a component:
   think about the rendered JSX.
 - Event handlers created in the past have the state values from the render in
   which they were created.
+
+Choosing the State Structure (from react.dev) as part of assignment.
+
+Few principles that can guide you to make better choices:
+
+- Group related state. If you always update two or more state variables at the same time, consider merging them into a single state variable.
+
+const [x, setX] = useState(0);
+const [y, setY] = useState(0);
+
+or
+
+const [position, setPosition] = useState({ x: 0, y: 0 });
+
+both can be used , but if both variables update together , second is the way to go
+
+- Avoid contradictions in state. When the state is structured in a way that several pieces of state may contradict and “disagree” with each other, you leave room for mistakes. Try to avoid this.
+- Avoid redundant state. If you can calculate some information from the component’s props or its existing state variables during rendering, you should not put that information into that component’s state.
+- Avoid duplication in state. When the same data is duplicated between multiple state variables, or within nested objects, it is difficult to keep them in sync. Reduce duplication when you can.
+- Avoid deeply nested state. Deeply hierarchical state is not very convenient to update. When possible, prefer to structure state in a flat way.
+
+- If two state variables always update together, consider merging them into one.
+- Choose your state variables carefully to avoid creating “impossible” states.
+- Structure your state in a way that reduces the chances that you’ll make a mistake
+  updating it.
+- Avoid redundant and duplicate state so that you don’t need to keep it in sync.
+- Don’t put props into state unless you specifically want to prevent updates.
+- For UI patterns like selection, keep ID or index in state instead of the object
+  itself.
+- If updating deeply nested state is complicated, try flattening i
