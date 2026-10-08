@@ -11,8 +11,8 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Gallery />
     <Form />
-    <FeedbackForm />
     <FeedbackForm1 />
+    <FeedbackForm />
     <TrafficLight />
   </StrictMode>,
 )

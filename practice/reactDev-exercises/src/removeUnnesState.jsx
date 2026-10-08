@@ -5,7 +5,9 @@ export default function FeedbackForm1() {
     }
 
     return (
-        <button onClick={handleClick}>
+        <button 
+        onClick={handleClick}
+        className="greetBTN">
             Greet
         </button>
     );
