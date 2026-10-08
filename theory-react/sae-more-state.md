@@ -27,6 +27,9 @@ function Person() {
     </>
   );
 }
+
+
+// exercise on that part is completed in React dev exercises.
 ```
 
 When React re-renders a component:
