@@ -5,6 +5,7 @@ import Form from './fixStuck'
 import FeedbackForm from './fixCrash'
 import FeedbackForm1 from './removeUnnesState'
 import TrafficLight from './trafficLight'
+import Clock from './fixNotUpdating'
 
 
 createRoot(document.getElementById('root')).render(
@@ -14,5 +15,6 @@ createRoot(document.getElementById('root')).render(
     <FeedbackForm1 />
     <FeedbackForm />
     <TrafficLight />
+    <Clock />
   </StrictMode>,
 )
