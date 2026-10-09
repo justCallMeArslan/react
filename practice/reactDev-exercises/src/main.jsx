@@ -6,6 +6,7 @@ import FeedbackForm from './fixCrash'
 import FeedbackForm1 from './removeUnnesState'
 import TrafficLight from './trafficLight'
 import Clock from './fixNotUpdating'
+import TravelPlan from './packingList'
 
 
 createRoot(document.getElementById('root')).render(
@@ -16,5 +17,6 @@ createRoot(document.getElementById('root')).render(
     <FeedbackForm />
     <TrafficLight />
     <Clock />
+    <TravelPlan />
   </StrictMode>,
 )

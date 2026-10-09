@@ -44,7 +44,7 @@ export default function Clock() {
             </label>
 
             <select
-                className="clock-color"
+                id="clock-color"
                 value={color}
                 onChange={(e) => setColor(e.target.value)}>
                 {palette.map((item) => (
