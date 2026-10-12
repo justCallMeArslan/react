@@ -1,7 +1,7 @@
 export const initialLetters = [{
     id: 0,
     subject: 'Ready for adventure?',
-    isStarred: true,
+    isStarred: false,
 }, {
     id: 1,
     subject: 'Time to check in!',

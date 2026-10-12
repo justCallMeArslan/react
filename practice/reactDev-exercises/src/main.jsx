@@ -7,6 +7,7 @@ import FeedbackForm1 from './removeUnnesState'
 import TrafficLight from './trafficLight'
 import Clock from './fixNotUpdating'
 import TravelPlan from './packingList'
+import MailClient from './disappearSelect'
 
 
 createRoot(document.getElementById('root')).render(
@@ -18,5 +19,6 @@ createRoot(document.getElementById('root')).render(
     <TrafficLight />
     <Clock />
     <TravelPlan />
+    <MailClient />
   </StrictMode>,
 )
