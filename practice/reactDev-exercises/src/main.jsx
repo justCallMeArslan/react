@@ -8,6 +8,7 @@ import TrafficLight from './trafficLight'
 import Clock from './fixNotUpdating'
 import TravelPlan from './packingList'
 import MailClient from './disappearSelect'
+import MailClient1 from './implemMultSelect'
 
 
 createRoot(document.getElementById('root')).render(
@@ -20,5 +21,6 @@ createRoot(document.getElementById('root')).render(
     <Clock />
     <TravelPlan />
     <MailClient />
+    <MailClient1 />
   </StrictMode>,
 )
