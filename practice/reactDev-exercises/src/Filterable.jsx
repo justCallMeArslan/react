@@ -51,4 +51,4 @@ function List({ items }) {
 }
 
 
-//same exercie as number 3. Moving state to parent to make components controlled.
+//same exercie as number 1. Moving state to parent to make components controlled.
