@@ -10,6 +10,7 @@ import TravelPlan from './packingList'
 import MailClient from './disappearSelect'
 import MailClient1 from './implemMultSelect'
 import SyncedInputs from './Synced'
+import FilterableList from './Filterable'
 
 
 createRoot(document.getElementById('root')).render(
@@ -24,5 +25,6 @@ createRoot(document.getElementById('root')).render(
     <MailClient />
     <MailClient1 />
     <SyncedInputs />
+    <FilterableList />
   </StrictMode>,
 )
