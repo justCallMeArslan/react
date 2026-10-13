@@ -74,6 +74,8 @@ both can be used , but if both variables update together , second is the way to 
 - Avoid duplication in state. When the same data is duplicated between multiple state variables, or within nested objects, it is difficult to keep them in sync. Reduce duplication when you can.
 - Avoid deeply nested state. Deeply hierarchical state is not very convenient to update. When possible, prefer to structure state in a flat way.
 
+React.dev/Choosing the state structure.
+
 - If two state variables always update together, consider merging them into one.
 - Choose your state variables carefully to avoid creating “impossible” states.
 - Structure your state in a way that reduces the chances that you’ll make a mistake
@@ -82,4 +84,13 @@ both can be used , but if both variables update together , second is the way to 
 - Don’t put props into state unless you specifically want to prevent updates.
 - For UI patterns like selection, keep ID or index in state instead of the object
   itself.
-- If updating deeply nested state is complicated, try flattening i
+- If updating deeply nested state is complicated, try flattening index
+
+React.dev/Saring state between components
+
+- When you want to coordinate two components, move their state to their common parent.
+- Then pass the information down through props from their common parent.
+- Finally, pass the event handlers down so that the children can change the
+  parent’s state.
+- It’s useful to consider components as “controlled” (driven by props) or
+  “uncontrolled” (driven by state).

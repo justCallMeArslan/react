@@ -9,6 +9,7 @@ import Clock from './fixNotUpdating'
 import TravelPlan from './packingList'
 import MailClient from './disappearSelect'
 import MailClient1 from './implemMultSelect'
+import SyncedInputs from './Synced'
 
 
 createRoot(document.getElementById('root')).render(
@@ -22,5 +23,6 @@ createRoot(document.getElementById('root')).render(
     <TravelPlan />
     <MailClient />
     <MailClient1 />
+    <SyncedInputs />
   </StrictMode>,
 )
