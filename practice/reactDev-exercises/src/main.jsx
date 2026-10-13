@@ -11,6 +11,7 @@ import MailClient from './disappearSelect'
 import MailClient1 from './implemMultSelect'
 import SyncedInputs from './Synced'
 import FilterableList from './Filterable'
+import Person from './personTOP'
 
 
 createRoot(document.getElementById('root')).render(
@@ -26,5 +27,6 @@ createRoot(document.getElementById('root')).render(
     <MailClient1 />
     <SyncedInputs />
     <FilterableList />
+    <Person />
   </StrictMode>,
 )
