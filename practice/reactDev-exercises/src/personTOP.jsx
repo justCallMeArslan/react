@@ -21,6 +21,17 @@ import { useState } from "react";
 //     );
 // }
 
+function Input({ name, value, onChange }) {
+    return (
+        <input
+            name={name}
+            value={value}
+            onChange={onChange}
+        />
+
+    )
+
+}
 
 export default function Person() {
     const [person, setPerson] = useState({ firstName: "", lastName: "" })
@@ -56,14 +67,4 @@ export default function Person() {
 
 
 
-function Input({ name, value, onChange }) {
-    return (
-        <input
-            name={name}
-            value={value}
-            onChange={onChange}
-        />
 
-    )
-
-}
