@@ -55,6 +55,7 @@ function Button({ text = "Click Me!", color = "blue", fontSize = 12, handleClick
     color: color,
     fontSize: fontSize + "px"
   };
+}
 ```
 
 abd later we can call it:
