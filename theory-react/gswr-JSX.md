@@ -1,4 +1,4 @@
-JSX - syntax extension for JS that lets us to write HTML-like markup inside a JS file.
+JSX - syntax extension for JS that let us to write HTML-like markup inside a JS file.
 
 Essentially we can say that JSX is syntactic sugar to createElement function of React.
 Example:
@@ -45,7 +45,7 @@ export default function App() {
 Why do we use JSX?
 
 Because JSX gives us a clean, easier to read way to describe what React component
-should render whhile still having access to JS.
+should render while still having access to JS.
 
 Rules of JSX:
 
@@ -87,7 +87,7 @@ stroke-width -> strokeWidth
 
 Converting HTML to JSX
 
-Basically done following rules above and rules for curly bracers.
+Basically done by following rules above and rules for curly bracers.
 
 {const} or {objectName.key}, if CSS used in JSX it will be presented in double
 curly bracers.
