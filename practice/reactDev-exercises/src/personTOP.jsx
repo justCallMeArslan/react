@@ -1,5 +1,8 @@
 import { useState } from "react";
 
+
+// lesson related part 
+
 // export default function Person1() {
 //     const [person, setPerson] = useState({ name: "John", age: 100 });
 
