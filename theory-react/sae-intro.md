@@ -1,13 +1,14 @@
-State is not somethiong exclusive to React, becuase by state we understand
+State is not something exclusive to React, because by state we understand
 current condition and components's memory, which it keeps as saved condition.
 
 In React we operate useState - a React built-in function that returns the current
 state value and a function for updating that state.
 
-const [state, setState] = useState(initialValue) ,
+const [state, setState] = useState(initialValue),
 
 where state is what we want to have as a current value and setState we use to
-change it and initialValue is the default/starting value.
+change it and initialValue is the default/starting value (boolean, number,
+string, etc).
 
 React reconciliation algorithm
 
