@@ -19,6 +19,7 @@ the new virtual DOM tree to the previous one and calculates the minimal set
 of changes needed to update the actual DOM. This is the reconciliation algorithm.
 
 Hooks
+
 Hooks are functions that let you use React features. All hooks are recognizable
 by the use prefix. For example, useState is a hook.
 

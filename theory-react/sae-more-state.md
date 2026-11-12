@@ -28,7 +28,7 @@ function Person() {
   );
 }
 
-// exercise on that part is completed in React dev exercises.
+
 ```
 
 When React re-renders a component:
@@ -84,7 +84,7 @@ React.dev/Choosing the state structure.
   itself.
 - If updating deeply nested state is complicated, try flattening index
 
-React.dev/Saring state between components
+React.dev/Sharing state between components
 
 - When you want to coordinate two components, move their state to their common parent.
 - Then pass the information down through props from their common parent.
